@@ -4,7 +4,7 @@ Restaurant Website
 A fully responsive restaurant website built using **HTML, CSS, Bootstrap 5, jQuery, and FontAwesome**.  
 It includes a carousel, menu section, order form with validation, modal popup, accordion FAQ, smooth scrolling, and a styled footer.
 
-Live Demo: 
+Live Demo: https://ayesha2524.github.io/Foodie-s-Delight/
 
 Features
 ### 1. Navigation Bar
