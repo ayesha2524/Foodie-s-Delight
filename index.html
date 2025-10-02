@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Foodie's Delight</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <button id="themeToggle" class="btn btn-outline-light ms-3 m-8">Dark Mode</button>
+                <ul class="navbar-nav ms-auto gap-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#order">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousal -->
+    <div id="foodCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/img1.jpg" class="d-block w-100" alt="Food 1" height="600" />
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img2.webp" class="d-block w-100" alt="Food 2" height="600" />
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img3.jpg" class="d-block w-100" alt="Food 3" height="600" />
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#foodCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#foodCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <h2>Welcome to Foodie's Delight</h2>
+        <p>
+            Experience the taste of authentic cuisine made with love and passion.
+            Enjoy a cozy dining environment and delicious meals made just for you!
+        </p>
+    </section>
+
+    <!-- Menu Section -->
+    <div class="container py-5" id="menu">
+        <h2 class="text-center mb-5">Our Special Korean Menu</h2>
+        <div class="row g-4">
+            <div class="col-4">
+                <div class="card">
+                    <img src="./assets/kimchiRamen.jpg" class="card-img-top" alt="Kimchi Ramen" />
+                    <div class="card-body">
+                        <h5 class="card-title">Kimchi Ramen</h5>
+                        <p class="card-text">Spicy Korean ramen with kimchi and veggies.</p>
+                        <p class="fw-bold">₨ 1250</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <img src="./assets/dumplings.jpeg" class="card-img-top" alt="Dumplings"  height="250"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Korean Dumplings</h5>
+                        <p class="card-text">Steamed or fried mandu with dipping sauce.</p>
+                        <p class="fw-bold">₨ 950</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <img src="./assets/cornDog.jpeg" class="card-img-top" alt="Korean Corn Dog" />
+                    <div class="card-body">
+                        <h5 class="card-title">Korean Corn Dog</h5>
+                        <p class="card-text">Crispy hot corn dog with cheese or sausage.</p>
+                        <p class="fw-bold">₨ 650</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <img src="./assets/koreanWings.jpg" class="card-img-top" alt="Korean Wings" />
+                    <div class="card-body">
+                        <h5 class="card-title">Korean Wings</h5>
+                        <p class="card-text">Crispy wings glazed in spicy gochujang sauce.</p>
+                        <p class="fw-bold">₨ 1450</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <img src="./assets/bulgogiBowl.jpeg" class="card-img-top" alt="Bulgogi Rice Bowl" />
+                    <div class="card-body">
+                        <h5 class="card-title">Bulgogi Rice Bowl</h5>
+                        <p class="card-text">Tender beef bulgogi served with rice.</p>
+                        <p class="fw-bold">₨ 1650</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <img src="./assets/hotteok.jpeg" class="card-img-top" alt="Hotteok" />
+                    <div class="card-body">
+                        <h5 class="card-title">Hotteok</h5>
+                        <p class="card-text">Sweet Korean pancake with syrup filling.</p>
+                        <p class="fw-bold">₨ 550</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order form -->
+    <div class="container mt-5" id="order">
+        <h2 class="text-center mb-4">Order Form</h2>
+        <div class="col-5 m-auto">
+            <form id="orderForm" class="p-4 border rounded bg-light">
+                <!-- Name -->
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your name" />
+                    <small class="text-danger" id="nameError"></small>
+                </div>
+                <!-- Email -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email" />
+                    <small class="text-danger" id="emailError"></small>
+                </div>
+                <!-- Phone -->
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number" />
+                    <small class="text-danger" id="phoneError"></small>
+                </div>
+
+                <div class="mb-3">
+                    <label for="foodItem" class="form-label">Food Item</label>
+                    <select id="foodItem" class="form-select">
+                        <option value="">-- Select a Food Item --</option>
+                        <option value="Pizza">Pizza</option>
+                        <option value="Burger">Burger</option>
+                        <option value="Pasta">Pasta</option>
+                        <option value="Salad">Salad</option>
+                        <option value="Sandwich">Sandwich</option>
+                    </select>
+                    <small class="text-danger" id="foodError"></small>
+                </div>
+                <!-- Quantity -->
+                <div class="mb-3">
+                    <label for="quantity" class="form-label">Quantity</label>
+                    <input type="number" id="quantity" class="form-control" min="1" placeholder="Enter quantity" />
+                    <small class="text-danger" id="quantityError"></small>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="btn btn-primary w-100">
+                    Place Order
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="text-center my-3">
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#orderModal">
+            View Order Info
+        </button>
+    </div>
+
+    <!-- Model Component -->
+    <div class="modal" id="orderModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Order Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p> Your orders will appear here!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="container my-5">
+        <h3 class="text-center mb-3">Frequently Asked Questions</h3>
+        <div class="col-5 m-auto">
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse1">
+                            Do you offer home delivery?
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes! We deliver to all nearby areas.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2">
+                            What are your working hours?
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We are open from 10 AM to 11 PM every day.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white pt-4 mt-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- Contact Info -->
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-envelope"></i> foodiesdelight@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Main Street, Lahore, Pakistan</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#menu" class="text-white text-decoration-none">Menu</a></li>
+                        <li><a href="#order" class="text-white text-decoration-none">Order</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-4 mb-3 text-center">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3 fs-4"><i class="fa-brands fa-facebook fa-xl"
+                            style="color: #1e60d2;"></i></a>
+                    <a href="#" class="text-white me-3 fs-4"><i class="fa-brands fa-instagram fa-xl"
+                            style="color: #680d47;"></i></a>
+                    <a href="#" class="text-white fs-4"><i class="fa-brands fa-twitter fa-xl"
+                            style="color: #4193d2;"></i></a>
+                    <a href="#" class="text-white m-3 fs-4"><i class="fa-brands fa-whatsapp fa-xl"
+                            style="color: #05573e;"></i></a>
+                </div>
+
+            </div>
+
+            <div class="text-center py-3 border-top mt-3">
+                &copy; 2025 Foodie's Delight. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

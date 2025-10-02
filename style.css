@@ -1,0 +1,17 @@
+.welcome-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.welcome-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.dark-theme {
+  background-color: #222;
+  color: white;
+}
+
+.dark-theme .card {
+  background-color: #333;
+  color: white;
+}
